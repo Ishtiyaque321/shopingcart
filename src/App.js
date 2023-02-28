@@ -1,9 +1,10 @@
 import "./App.css";
+import PreNavbar from "./components/PreNavbar";
 
 function App() {
     return (
         <div>
-            <h1>g</h1>
+            <PreNavbar />
         </div>
     );
 }
