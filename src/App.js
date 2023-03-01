@@ -1,11 +1,16 @@
 import "./App.css";
 import PreNavbar from "./components/PreNavbar";
+import Navbar from "./components/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Slider from "./components/Slider";
 
 function App() {
     return (
-        <div>
+        <BrowserRouter>
             <PreNavbar />
-        </div>
+            <Navbar />
+            <Slider />
+        </BrowserRouter>
     );
 }
 
