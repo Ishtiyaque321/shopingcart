@@ -7,6 +7,7 @@ import Offers from "./components/Offers";
 import Heading from "./components/Heading";
 import StarProduct from "./components/StarProduct";
 import HotAccessoriesMenu from "./components/HotAccessoriesMenu";
+import HotAccessories from "./components/HotAccessories";
 import data from "./data/data.json";
 
 function App() {
@@ -22,7 +23,12 @@ function App() {
             <HotAccessoriesMenu />
 
             <Routes>
-                <Route exact path="/music" />
+                <Route exact path="/music">
+                    <HotAccessories
+                        music={data.hotAccessories.music}
+                        musicCover={data.hotAccessoriesCover.music}
+                    />
+                </Route>
             </Routes>
         </BrowserRouter>
     );
