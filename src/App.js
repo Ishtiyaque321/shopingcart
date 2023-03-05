@@ -16,23 +16,32 @@ function App() {
     return (
         <BrowserRouter>
             <PreNavbar />
+
             <Navbar />
+
             <Slider start={data.banner.start} />
+
             <Offers offer={data.offer} />
+
             <Heading text="STAR PRODUCTS" />
+
             <StarProduct starProduct={data.starProduct} />
+
             <Heading text="HOT ACCESSORIES" />
+
             <HotAccessoriesMenu />
 
-            <Routes>
-                <Route path="/music" element={<HotAccessoriesMenu />} />
-            </Routes>
             <Heading text="PRODUCT REVIEWS" />
+
             <ProductReview productReviews={data.productReviews} />
+
             <Heading text="VIDEOS" />
+
             <Video videos={data.videos} />
+
             <Heading text="IN THE PRESS" />
-            <Banner banner={data.banner} np/>
+
+            <Banner banner={data.banner} />
         </BrowserRouter>
     );
 }
