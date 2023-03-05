@@ -4,10 +4,10 @@ import "../styles/hotAccessoriesMenu.css";
 import { hotAccessories } from "../data/data";
 
 const tabData = [
-    {
-        label: "All",
-        value: "all",
-    },
+    // {
+    //     label: "All",
+    //     value: "all",
+    // },
     {
         label: "Music Store",
         value: "music",
