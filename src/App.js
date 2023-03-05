@@ -7,8 +7,10 @@ import Offers from "./components/Offers";
 import Heading from "./components/Heading";
 import StarProduct from "./components/StarProduct";
 import HotAccessoriesMenu from "./components/HotAccessoriesMenu";
-import HotAccessories from "./components/HotAccessories";
 import data from "./data/data.json";
+import ProductReview from "./components/ProductReview";
+import Video from "./components/Video.jsx";
+import Banner from "./components/Banner.jsx";
 
 function App() {
     return (
@@ -23,13 +25,14 @@ function App() {
             <HotAccessoriesMenu />
 
             <Routes>
-                <Route exact path="/music">
-                    <HotAccessories
-                        music={data.hotAccessories.music}
-                        musicCover={data.hotAccessoriesCover.music}
-                    />
-                </Route>
+                <Route path="/music" element={<HotAccessoriesMenu />} />
             </Routes>
+            <Heading text="PRODUCT REVIEWS" />
+            <ProductReview productReviews={data.productReviews} />
+            <Heading text="VIDEOS" />
+            <Video videos={data.videos} />
+            <Heading text="IN THE PRESS" />
+            <Banner banner={data.banner} np/>
         </BrowserRouter>
     );
 }

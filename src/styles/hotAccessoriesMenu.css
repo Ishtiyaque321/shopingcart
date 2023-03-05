@@ -14,5 +14,50 @@
 .hotAccessoriesLink:hover {
     text-decoration: none;
     color: orangered;
+    cursor: pointer;
     border-bottom: 1px solid orangered;
+}
+
+.activeTab {
+    color: orangered;
+}
+
+.HotItemCard {
+    /* border: 1px solid red; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 1vmax auto;
+    text-align: center;
+    background-color: white;
+    width: 31%;
+    /* margin: 0.7vmax; */
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.HotItemCard:hover {
+    transform: translateY(-0.4vmax);
+    box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+}
+
+.HotItemCard > img {
+    width: 70%;
+}
+
+.HotItemCard > p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(85, 83, 83);
+}
+
+.HotItemCard > span {
+    color: orangered;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.HotItemCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
