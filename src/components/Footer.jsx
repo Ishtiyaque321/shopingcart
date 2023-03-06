@@ -81,7 +81,7 @@ const instagramIcon = (
     </svg>
 );
 
-const Footer = ({ footer }) => {
+const Footer = () => {
     return (
         <>
             <div className="PreFooter">
